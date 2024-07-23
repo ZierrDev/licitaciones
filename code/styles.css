@@ -161,7 +161,7 @@ body {
   color: var(--main-color);
 }
 
-a {
+a  {
   text-decoration: none;
   color: whitesmoke;
   padding: 0 3px;
@@ -260,4 +260,10 @@ body {
 }
 span.dark {
   background-color: #bfdbfe;
+}
+
+a.boton-login{
+  text-decoration: none;
+  color: black;
+  padding: 0 3px;
 }
