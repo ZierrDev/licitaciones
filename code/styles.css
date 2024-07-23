@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*LO DEL BOTON*/
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  background: #0df053;
+  right: 30px;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+/*OTROS*/
+.h1 {
+  position: fixed;
+}
+body {
+  background-color: #f5f5f5; /*  CAMBIE EL COLOR SI QUIERE */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  min-height: 70px;
+  background: #40d2dc;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 60%;
+}
+
+/*SLIDER BOX*/
+body {
+  background-color: #f8fafc;
+}
+.container {
+  padding: 7rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+/*COSO DE NAVEGACION*/
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.menu-item {
+  margin: 0 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+
+.cta {
+  padding: 10px 24px;
+  border-radius: 30px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cta:hover {
+  color: white;
+  background-color: #04548a;
+}
+.menu-item:hover {
+  color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0 3px;
+}
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+nav a:hover {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
+
+ul {
+  position: top;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+  z-index: 1;
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
+}
+ul li a:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #77e8ea;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+ul li a:hover {
+  color: black;
+}
+ul li a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+ul li a:hover:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+body {
+  background-color: #f8fafc;
+}
+.span {
+  position: absolute, bottom;
+  left: 0;
+  background-color: #ebf8ff; /* bg-blue-100 */
+  color: #1e3a8a; /* text-blue-800 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  padding: 0.125rem 0.625rem; /* px-2.5 py-0.5 */
+  border-radius: 0.25rem; /* rounded */
+}
+span.dark {
+  background-color: #bfdbfe;
+}

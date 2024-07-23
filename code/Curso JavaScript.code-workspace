@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../OneDrive/Imágenes/Base_de_Datos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Curso JavaScript"
+	}
+}
