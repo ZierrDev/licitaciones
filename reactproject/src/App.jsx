@@ -1,9 +1,14 @@
-import NavBar from "./components/NavBar";
+import Header from "./containers/Header";
+import ImagesCarousel from "./components/ImagesCarousel";
+import WhatsAppBubble from "./components/WhatsAppBubble/index";
 
 const App = () => {
   return (
     <>
-      <NavBar />
+      <Header>
+        <ImagesCarousel />
+      </Header>
+      <WhatsAppBubble />
       <h1 className='text-4xl'>Hola Mundo</h1>
     </>
   );
