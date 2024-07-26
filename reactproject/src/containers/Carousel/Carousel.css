@@ -1,3 +1,16 @@
+.slider {
+  width: 100%;
+}
+
+.slick-slide {
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
 .slick-arrow {
   fill: inherit;
   height: 100%;
