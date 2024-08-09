@@ -1,16 +1,14 @@
-import Header from "./containers/Header";
-import ImagesCarousel from "./components/ImagesCarousel";
 import WhatsAppBubble from "./components/WhatsAppBubble/index";
+import Home from "./components/Home";
+import Services from "./components/Services";
 
 const App = () => {
   return (
-    <>
-      <Header>
-        <ImagesCarousel />
-      </Header>
+    <div className='bg-aqua-teal-950 text-aqua-teal-50'>
+      <Home />
+      <Services />
       <WhatsAppBubble />
-      <h1 className='text-4xl'>Hola Mundo</h1>
-    </>
+    </div>
   );
 };
 

@@ -20,7 +20,7 @@ const elements = [
 
 const ImagesCarousel = () => {
   return (
-    <div>
+    <div className='mb-8'>
       <Carousel elements={elements} />
     </div>
   );

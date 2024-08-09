@@ -23,14 +23,14 @@ const Carousel = ({ elements }) => {
     nextArrow: (
       <div>
         <div className='h-full'>
-          <ChevronRightIcon className='fill-stone-900 h-full w-10 ' />
+          <ChevronRightIcon className='fill-aqua-teal-100 h-full w-10 ' />
         </div>
       </div>
     ),
     prevArrow: (
       <div>
         <div className='h-full relative -left-4'>
-          <ChevronLeftIcon className='fill-stone-900 h-full w-10' />
+          <ChevronLeftIcon className='fill-aqua-teal-100 h-full w-10' />
         </div>
       </div>
     ),
